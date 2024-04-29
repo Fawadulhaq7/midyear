@@ -1,0 +1,89 @@
+.equipments {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+    opacity: 0;
+    animation: fadeInScaleAnimation 1.5s ease forwards; /* Apply fade-in and scale-up animation */
+  }
+  
+  @keyframes fadeInScaleAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px) scale(0.9); /* Start with slightly smaller size and slide down */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1); /* End with original size and position */
+    }
+  }
+  
+  .equipments h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #00396f;
+  }
+  
+  .equipments ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .equipments li {
+    margin: 0 10px 20px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease;
+  }
+  
+  .equipments li:hover {
+    transform: translateY(-5px);
+  }
+  
+  .equipments span {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #002f44;
+  }
+  
+  .equipments span.equipment {
+    color: #555;
+  }
+  
+  .request-button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #000000;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    animation: pulse 2s infinite;
+  }
+  
+  .request-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #0272c2;
+    border-color: #1fa0e5;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
